@@ -3,9 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume(DOM)</title>
+    <link rel="icon" type="image/x-icon" href="./mfavcon.png">  
+
+    <style>
+
+        table,tr,th{
+            border: 3px solid violet;
+        }
+    </style>
 </head>
 <body>
+   
     
+    <script>
+
+// let img = document.createElement("img")
+// img.src="./mfavcon.png"
+
+// document.body.appendChild(img);
+// img.style.width="200px"
+// img.style.height="200px"
+
+
+// let img1 = new img();
+// img.src=""
+// document.body.appendChild(img1);
+
+//     resume
+let resume = document.createElement("h1");
+
+resume.innerText="Resume";
+resume.style.textAlign="center";
+
+document.body.appendChild(resume);
+
+let namee = document.createElement("h3");
+namee.innerText="Vemula Manohar";
+document.body.appendChild(namee);
+
+let gmaill = document.createElement("h3");
+gmaill.innerText="a2a@gmai.com";
+document.body.appendChild(gmaill);
+
+let num = document.createElement("h3");
+num.innerText="9*****9**";
+
+document.body.appendChild(num);
+
+
+let hr1 = document.createElement("hr");
+
+
+document.body.appendChild(hr1);
+
+let  co = document.createElement("h2");
+co.innerText="CAREER OBJECTIVE";
+document.body.appendChild(co);
+let  com = document.createElement("p");
+com.innerText="Manage a simple project and be able to contribute to a more complex project as a team member. Program using one of at least two software languages to develop and evaluate software, hardware infrastructure, and network solutions to meet desired client outcomes.";
+document.body.appendChild(com);
+
+let  Soft_Skills = document.createElement("h2");
+Soft_Skills.innerText="SOFT SKILLS";
+document.body.appendChild(Soft_Skills);
+
+let  ul = document.createElement("ul");
+document.body.appendChild(ul);
+
+let array1 = ["Obersavation","Decision Making","Multi-tasking","Communication"]
+for (i in array1){
+
+    let list1 = document.createElement("li");
+    list1.innerText = array1[i]
+    ul.appendChild(list1);
+}
+
+
+let Technical_Skills = document.createElement("h2");
+Technical_Skills.innerText="Technical Skills";
+document.body.appendChild(Technical_Skills);
+
+let  ul2 = document.createElement("ul");
+document.body.appendChild(ul2);
+
+let array2 = ["HTML","CSS","Bootstrap","JavaScript","React-js","SQL"]
+for (i in array2){
+
+    let list2 = document.createElement("li");
+    list2.innerText = array2[i]
+    ul2.appendChild(list2);
+}
+
+
+let edu = document.createElement("h2");
+edu.innerText="EDUCATION DETAILS"
+document.body.appendChild(edu);
+
+
+let table = document.createElement("table");
+document.body.appendChild(table);
+
+let tr1 = document.createElement("tr");
+table.appendChild(tr1);
+
+let th11 = document.createElement("th");
+tr1.appendChild(th11);
+th11.innerText="Institute";
+
+let th12 = document.createElement("th");
+tr1.appendChild(th12);
+th12.innerText="Branch";
+
+
+let th13 = document.createElement("th");
+tr1.appendChild(th13);
+th13.innerText="Percentage";
+
+
+
+let tr2 = document.createElement("tr");
+table.appendChild(tr2);
+
+let th21 = document.createElement("th");
+tr2.appendChild(th21);
+th21.innerText="JJ INSTITUTE OF INFORMATION TECHNIOLOGY,Maheswaram";
+
+let th22 = document.createElement("th");
+tr2.appendChild(th22);
+th22.innerText="B.Tech(CIVIL)";
+
+
+let th23 = document.createElement("th");
+tr2.appendChild(th23);
+th23.innerText="70%";
+
+
+
+let tr3 = document.createElement("tr");
+table.appendChild(tr3);
+
+let th31 = document.createElement("th");
+tr3.appendChild(th31);
+th31.innerText="GOVT JUNIOR COLLOGE, MLL";
+
+let th32 = document.createElement("th");
+tr3.appendChild(th32);
+th32.innerText="MPC";
+
+
+let th33 = document.createElement("th");
+tr3.appendChild(th33);
+th33.innerText="78%";
+
+
+
+
+let tr4 = document.createElement("tr");
+table.appendChild(tr4);
+
+let th41 = document.createElement("th");
+tr4.appendChild(th41);
+th41.innerText="ZPHS, BPL";
+
+let th42 = document.createElement("th");
+tr4.appendChild(th42);
+th42.innerText="SSC";
+
+
+let th43 = document.createElement("th");
+tr4.appendChild(th43);
+th43.innerText="74%";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let hobbies = document.createElement("h2");
+hobbies.innerText="Hobbies";
+document.body.appendChild(hobbies);
+
+let  ul3 = document.createElement("ul");
+document.body.appendChild(ul3);
+
+let array3 = ["Reading news","Watching reels","CHESS","Sudoku"]
+for (i in array3){
+
+    let list3 = document.createElement("li");
+    list3.innerText = array3[i]
+    ul3.appendChild(list3);
+}
+
+
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>

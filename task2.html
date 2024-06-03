@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dropDown</title>
+    <link rel="icon" type="image/x-icon" href="./mfavcon.png">  
 </head>
 <body>
     
+
+
+
+
+
+
+
+<script>
+let forM = document.createElement("form");
+document.body.appendChild(forM);
+
+
+let selecT= document.createElement("select");
+forM.appendChild(selecT);
+
+
+
+let op1= document.createElement("option");
+selecT.appendChild(op1);
+
+
+let op2= document.createElement("option");
+selecT.appendChild(op2);
+
+let op3= document.createElement("option");
+selecT.appendChild(op3);
+
+let op4= document.createElement("option");
+selecT.appendChild(op4);
+
+let op5= document.createElement("option");
+selecT.appendChild(op5);
+
+let arr = [1,2,3,4,5];
+let op = document.querySelectorAll("option");
+
+for (i=0;i<arr.length;i++){
+    op[i].innerText=arr[i]
+}
+
+console.log(forM)
+</script>
+
 </body>
 </html>
